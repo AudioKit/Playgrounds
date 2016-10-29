@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>Name</key>
+	<string>Effects</string>
+	<key>Pages</key>
+	<array>
+		<string>Introduction.playgroundpage</string>
+		<string>Compressor.playgroundpage</string>
+        <string>Decimator.playgroundpage</string>
+        <string>Delay.playgroundpage</string>
+        <string>Distortion.playgroundpage</string>
+        <string>Dynamics Processor.playgroundpage</string>
+        <string>Expander.playgroundpage</string>
+        <string>Peak Limiter.playgroundpage</string>
+        <string>Reverb.playgroundpage</string>
+        <string>Ring Modulator.playgroundpage</string>
+        <string>iOS-only Reverb.playgroundpage</string>
+	</array>
+</dict>
+</plist>

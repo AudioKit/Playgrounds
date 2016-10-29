@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Version</key>
+	<string>1.0</string>
+	<key>Name</key>
+	<string>Playback</string>
+	<key>Pages</key>
+	<array>
+		<string>Introduction.playgroundpage</string>
+		<string>Audio Player.playgroundpage</string>
+		<string>Editing Audio Files.playgroundpage</string>
+		<string>Playback Speed.playgroundpage</string>
+		<string>Time and Pitch Stretching.playgroundpage</string>
+	</array>
+</dict>
+</plist>
