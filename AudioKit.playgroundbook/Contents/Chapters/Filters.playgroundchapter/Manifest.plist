@@ -5,7 +5,7 @@
 	<key>Version</key>
 	<string>1.0</string>
 	<key>Name</key>
-	<string>Basics</string>
+	<string>Filters</string>
 	<key>Pages</key>
 	<array>
 		<string>Introduction.playgroundpage</string>
