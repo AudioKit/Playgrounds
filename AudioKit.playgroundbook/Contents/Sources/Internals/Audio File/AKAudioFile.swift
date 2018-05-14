@@ -263,12 +263,12 @@ extension AVAudioCommonFormat: CustomStringConvertible {
                                       frameCapacity: AVAudioFrameCount(self.length))
 
         do {
-            try self.read(into: buffer!)
+            try self.read(into: buffer)
         } catch let error as NSError {
             AKLog("error cannot readIntBuffer, Error: \(error)")
         }
 
-        return buffer!
+        return buffer
 
     }()
 

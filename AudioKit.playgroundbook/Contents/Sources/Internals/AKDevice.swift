@@ -9,11 +9,7 @@
 import Foundation
 import AVFoundation
 
-#if os(OSX)
-public typealias DeviceID = AudioDeviceID
-#else
 public typealias DeviceID = String
-#endif
 
 /// Wrapper for audio device selection
 @objc open class AKDevice: NSObject {

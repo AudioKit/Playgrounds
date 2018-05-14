@@ -19,6 +19,10 @@ public typealias AKCallback = () -> Void
 /// Top level AudioKit managing class
 @objc open class AudioKit: NSObject {
 
+    @objc open static var format = AKSettings.audioFormat
+
+    @objc static var shouldBeRunning = false
+
     // MARK: - Internal audio engine mechanics
 
     /// Reference to the AV Audio Engine
@@ -31,14 +35,17 @@ public typealias AKCallback = () -> Void
     /// An audio output operation that most applications will need to use last
     @objc open static var output: AKNode? {
         didSet {
-            do {
-                try updateSessionCategoryAndOptions()
-                output?.connect(to: finalMixer)
-                engine.connect(finalMixer.avAudioNode, to: engine.outputNode)
+            engine.connect(output!.avAudioNode,
+                to: engine.outputNode,
+                format: AudioKit.format)
+            // do {
+            //     try updateSessionCategoryAndOptions()
+            //     output?.connect(to: finalMixer)
+            //     engine.connect(finalMixer.avAudioNode, to: engine.outputNode)
 
-                } catch {
-                AKLog("Could not set output: \(error)")
-            }
+            //     } catch {
+            //     AKLog("Could not set output: \(error)")
+            // }
         }
     }
 

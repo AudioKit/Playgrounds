@@ -60,8 +60,7 @@ extension AudioKit {
 
         // Only an issue if engine is running, node is a mixer, and mixer has no inputs
         guard let mixer = node as? AVAudioMixerNode,
-            engine.isRunning,
-            !engine.mixerHasInputs(mixer: mixer) else {
+            engine.isRunning else {
                 return nil
         }
 
@@ -107,18 +106,6 @@ extension AudioKit {
         for node in nodes {
             engine.detach(node)
         }
-    }
-
-    /// Render output to an AVAudioFile for a duration.
-    ///
-    ///     - Parameters:
-    ///         - audioFile: An file initialized for writing
-    ///         - duration: Duration to render, in seconds
-    ///         - prerender: A closure called before rendering starts, use this to start players, set initial parameters, etc...
-    ///
-    @available(iOS 11, macOS 10.13, tvOS 11, *)
-    @objc open static func renderToFile(_ audioFile: AVAudioFile, duration: Double, prerender: (() -> Void)? = nil) throws {
-        try engine.renderToFile(audioFile, duration: duration, prerender: prerender)
     }
 
 }

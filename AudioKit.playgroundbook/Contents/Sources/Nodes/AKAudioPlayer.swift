@@ -456,12 +456,6 @@ open class AKAudioPlayer: AKNode, AKToggleable {
         scheduledAVTime = avTime
     }
 
-    /// return the peak time in the currently loaded buffer
-    open func getPeakTime() -> Double {
-        guard let buffer = audioFileBuffer else { return 0 }
-        return AKAudioFile.findPeak(pcmBuffer: buffer)
-    }
-
     // MARK: - Static Methods
 
     /// Convert to AVAudioTime
@@ -607,14 +601,14 @@ open class AKAudioPlayer: AKNode, AKToggleable {
             // n is the channel
             for n in 0 ..< Int(buffer.format.channelCount) {
                 // we write the reverseBuffer via the j index
-                reverseBuffer?.floatChannelData?[n][j] = buffer.floatChannelData?[n][i] ?? 0.0
+                reverseBuffer.floatChannelData?[n][j] = buffer.floatChannelData?[n][i] ?? 0.0
             }
             j += 1
         }
         // set the buffer now to be the reverse one
         audioFileBuffer = reverseBuffer
         // update this to the new value
-        audioFileBuffer?.frameLength = length
+        audioFileBuffer!.frameLength = length
     }
 
     /// Apply sample level fades to the internal buffer.
@@ -677,7 +671,7 @@ open class AKAudioPlayer: AKNode, AKToggleable {
                 }
 
                 let sample = audioFileBuffer!.floatChannelData![n][i] * Float(gain)
-                fadeBuffer?.floatChannelData?[n][i] = sample
+                fadeBuffer.floatChannelData?[n][i] = sample
             }
         }
         // set the buffer now to be the faded one

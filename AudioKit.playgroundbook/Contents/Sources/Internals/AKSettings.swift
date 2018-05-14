@@ -217,7 +217,6 @@ extension AKSettings {
             if AKSettings.defaultToSpeaker {
                 options = options.union(.defaultToSpeaker)
             }
-            #endif
         }
 
         return options
@@ -256,11 +255,7 @@ extension AKSettings {
             case .multiRoute:
                 return AVAudioSessionCategoryMultiRoute
             case .audioProcessing:
-                #if !os(tvOS)
                 return AVAudioSessionCategoryAudioProcessing
-                #else
-                return "AVAudioSessionCategoryAudioProcessing"
-                #endif
             }
         }
     }
