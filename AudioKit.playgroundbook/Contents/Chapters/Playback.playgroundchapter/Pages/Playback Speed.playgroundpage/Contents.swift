@@ -30,14 +30,9 @@ class PlaygroundView: AKPlaygroundView {
 
         addSubview(AKBypassButton(node: variSpeed))
 
-        addSubview(AKPropertySlider(
-            property: "Rate",
-            format: "%0.3f",
-            value: variSpeed.rate, minimum: 0.3125, maximum: 5,
-            color: AKColor.green
-        ) { sliderValue in
+        addSubview(AKSlider(property: "Rate", value: variSpeed.rate, range: 0.312_5 ... 5) { sliderValue in
             variSpeed.rate = sliderValue
-            })
+        })
     }
 }
 
