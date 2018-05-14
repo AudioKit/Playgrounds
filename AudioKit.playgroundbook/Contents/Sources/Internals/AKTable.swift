@@ -152,7 +152,7 @@ import Foundation
     public var phaseOffset: Int {
         @inline(__always)
         get {
-            return Int(phase * count)
+            return Int(phase * Double(count)
         }
     }
 
