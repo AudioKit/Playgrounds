@@ -21,21 +21,4 @@ extension AKAudioFile {
         }
         return fileSampler
     }
-
-    /// Create an AKMIDISampler loaded with the current AKAudioFile
-    public var midiSampler: AKMIDISampler? {
-        let fileSampler = AKMIDISampler()
-        do {
-            try fileSampler.loadAudioFile(self)
-        } catch let error as NSError {
-            AKLog("ERROR AKAudioFile: cannot create sampler: \(error)")
-        }
-        return fileSampler
-    }
-
-    /// Create an AKAudioPlayer to play the current AKAudioFile
-    public var player: AKPlayer {
-        return AKPlayer(audioFile: self)
-    }
-
 }
