@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Playgrounds"
+      name = "Playgrounds">
+      <FileRef
+         location = "group:Basics.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Synthesis.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Effects.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Filters.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Analysis.playground">
+      </FileRef>
+      <FileRef
+         location = "group:Playback.playground">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:AudioKitPlaygrounds.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

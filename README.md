@@ -1,9 +1,19 @@
-# The AudioKit Playground Book
+# AudioKit Playgrounds
 
-This is now the easiest way to try out AudioKit playgrounds.  Just put "AudioKit.playgroundbook" in your Playgrounds folder on iCloud Drive, or use AirDrop to transfer it onto your iPad, which will prompt you to open the playground book in the Playgrounds app.
+<table>
+<tr>
+<td>
+Playgrounds contain bite-size examples of AudioKit and serve as tutorials for many of AudioKit's core concepts and capabilities.  
 
-There are some limitations.  It requires iOS10.   It is not a complete copy of AudioKit's functionality and only contains a fraction of the playgrounds available from within Xcode.  There are no synthesis or analysis playgrounds and you cannot currently access the microphone from iPad Playgrounds.
+The playgrounds come in two flavors, playgrounds for the iPad Pro's "Playgrounds" application and playgrounds for use inside of Xcode on macOS.
 
-But, its a great start and good introduction to what kind of things are possible with AudioKit!
+The Xcode playgrounds are more powerful than the iPad playgrounds, and cover more of the various capabilities of AudioKit. But, for beginners the iPad playgrounds might be more fun, especially for kids.
 
-![AudioKit for iPad Playgrounds: Screenshot of the Delay Playground](DelayScreenshot.png)
+</td>
+<td width=320 align=right>
+
+[![Playgrounds](http://audiokit.io/examples/playgrounds.jpg)](http://audiokit.io/playgrounds/)
+
+</td>
+</tr>
+</table>
