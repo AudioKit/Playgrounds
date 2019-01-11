@@ -3,11 +3,12 @@
 <table>
 <tr>
 <td>
-Playgrounds contain bite-size examples of AudioKit and serve as tutorials for many of AudioKit's core concepts and capabilities.  There are over 100 playgrounds which cover basic tutorials, synthesis, physical modeling, file playback, MIDI, effects, filters, and analysis.
+Playgrounds contain bite-size examples of AudioKit and serve as tutorials for many of AudioKit's core concepts and capabilities.  
 
-We provide all playgrounds as a macOS project that is ready to run in Xcode. Just download the `AudioKitPlaygrounds.zip` file from our [releases page](https://github.com/audiokit/AudioKit/releases), open and build the project, and go to the playground pages to learn AudioKit's API in a fun way!
+The playgrounds come in two flavors, playgrounds for the iPad Pro's "Playgrounds" application and playgrounds for use inside of Xcode on macOS.
 
-We have videos of most of the playgrounds in action, so you don't need to run Xcode to check them out, just go to [AudioKit Playground Videos](http://audiokit.io/playgrounds/).
+The Xcode playgrounds are more powerful than the iPad playgrounds, and cover more of the various capabilities of AudioKit. But, for beginners the iPad playgrounds might be more fun, especially for kids.
+
 </td>
 <td width=320 align=right>
 
