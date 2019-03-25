@@ -21,8 +21,8 @@ player.play()
 
 import AudioKitUI
 
-public class LiveView: AKLiveViewController {
-    public override func viewDidLoad() {
+class LiveView: AKLiveViewController {
+    override func viewDidLoad() {
         addTitle("Node Output Plots")
 
         addView(AKSlider(property: "Time", value: delay.time) { sliderValue in

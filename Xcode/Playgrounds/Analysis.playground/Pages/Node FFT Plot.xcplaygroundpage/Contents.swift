@@ -12,8 +12,8 @@ try AudioKit.start()
 
 import AudioKitUI
 
-public class LiveView: AKLiveViewController {
-    public override func viewDidLoad() {
+class LiveView: AKLiveViewController {
+    override func viewDidLoad() {
         addTitle("Node FFT Plot")
 
         let plot = AKNodeFFTPlot(microphone, frame: CGRect(x: 0, y: 0, width: 500, height: 500))
