@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Version</key>
-	<string>1.0</string>
+	<string>6.0</string>
 	<key>Name</key>
 	<string>AudioKit</string>
 	<key>ContentIdentifier</key>
@@ -21,6 +21,16 @@
 		<string>Playback.playgroundchapter</string>
 		<string>Effects.playgroundchapter</string>
 		<string>Filters.playgroundchapter</string>
+	</array>
+	<key>SwiftVersion</key>
+	<string>5</string>
+	<key>DevelopmentRegion</key>
+	<string>en</string>
+	<key>UserModuleMode</key>
+	<string>Full</string>
+	<key>UserAutoImportedAuxiliaryModules</key>
+	<array>
+		<string>AudioKit</string>
 	</array>
 </dict>
 </plist>

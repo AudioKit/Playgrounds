@@ -10,9 +10,9 @@
 	<array>
 		<string>Introduction.playgroundpage</string>
 		<string>Connecting Nodes.playgroundpage</string>
-        <string>Mixing Nodes.playgroundpage</string>
-        <string>Splitting Nodes.playgroundpage</string>
-        <string>Dry Wet Mixer.playgroundpage</string>
+		<string>Mixing Nodes.playgroundpage</string>
+		<string>Splitting Nodes.playgroundpage</string>
+		<string>Dry Wet Mixer.playgroundpage</string>
 	</array>
 </dict>
 </plist>

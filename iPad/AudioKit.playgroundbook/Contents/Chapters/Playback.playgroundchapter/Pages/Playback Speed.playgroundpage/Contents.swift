@@ -15,7 +15,7 @@ AudioKit.output = variSpeed
 AudioKit.start()
 player.play()
 
-//hidden-code
+//#-hidden-code
 
 //: User Interface Set up
 
@@ -42,4 +42,4 @@ PlaygroundPage.current.liveView = PlaygroundView()
 
 
 PlaygroundPage.current.needsIndefiniteExecution = true
-//end-hidden-code
+//#-end-hidden-code
