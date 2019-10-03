@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos' display-mode='rendered'>
+<playground version='6.0' target-platform='macos' display-mode='raw'>
     <pages>
         <page name='Table Of Contents'/>
-        <page name='AutoPan Operation'/>
+        <page name='AutoPanner'/>
         <page name='AutoWah Operation'/>
         <page name='Auto Wah Wah'/>
         <page name='Bit Crush Effect'/>
@@ -46,5 +46,6 @@
         <page name='Variable Delay'/>
         <page name='Variable Delay Operation'/>
         <page name='3D Panner'/>
+        <page name='ADC 2018'/>
     </pages>
 </playground>
