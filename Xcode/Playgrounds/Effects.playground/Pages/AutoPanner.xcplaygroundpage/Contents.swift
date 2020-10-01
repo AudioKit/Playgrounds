@@ -12,8 +12,8 @@ let effect = AKAutoPanner(osc)
 
 effect.depth = 1
 effect.frequency = 1
-AudioKit.output = effect
-try AudioKit.start()
+AKManager.output = effect
+try AKManager.start()
 //player.play()
 osc.start()
 
